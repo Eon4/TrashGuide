@@ -25,6 +25,7 @@ const ScrollToTop = () => {
   // Render a div with the scrollToTop class that, when clicked, triggers the scrollToTop function
   return (
     <div className={style.scrollToTop} onClick={scrollToTop}>
+      <p>Back to top</p>
       <FaArrowCircleUp />
     </div>
   );

@@ -1,0 +1,28 @@
+
+//logo scss
+.logo {
+    display: flex;
+    align-items: center;  // Vertically align items to the center
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding: 10px;
+    font-family: var(--fontFamily);
+  
+    .logoText {
+      margin-left: 10px;  // Adjust the margin as needed
+    }
+  }
+  
+  
+
+    .footerLogo{
+        color: rgb(255, 255, 255);
+        // background-color: rgb(157, 136, 128);
+        border-radius: 1px;
+        border-color: black;
+        border-width: 4px;
+        padding: 10px;
+        justify-content: left;
+        font-family: var(--greenBottle);
+        font-size: 38px;
+      }

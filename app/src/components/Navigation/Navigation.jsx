@@ -1,36 +1,32 @@
 
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/image/Logo/logo.svg';
 import unlockLogo from '../../assets/image/Logo/icon-unlock.svg';
 import style from './Navigation.module.scss';
+import Logo from '../Logo/Logo';
+
 
 export function Navigation() {
   return (
     <nav className={style.nav}>
       <section>
-        <div className={style.logo}>
-        <img src={logo} alt='Logo' />
-        <h1 className={style.logoFont}>Affaldsguiden</h1>
-        </div>
+        <Logo/>
         <ul>
           <li>
-            <NavLink
-              to='/'
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? 'red' : 'black',
-                };
-              }}
-            >
-              Forside
-            </NavLink>
+          <NavLink
+      to='/'
+      style={({ isActive }) => ({
+        color: isActive ? 'var(--activeGreen)' : 'black',
+      })}
+    >
+      Forside
+    </NavLink>
           </li>
           <li>
             <NavLink
               to='/sorting'
               style={({ isActive }) => {
                 return {
-                  color: isActive ? 'red' : 'black',
+                  color: isActive ? 'var(--activeGreen)' : 'black',
                 };
               }}
             >
@@ -42,7 +38,7 @@ export function Navigation() {
               to='/recycling'
               style={({ isActive }) => {
                 return {
-                  color: isActive ? 'red' : 'black',
+                  color: isActive ? 'var(--activeGreen)' : 'black',
                 };
               }}
             >
@@ -54,7 +50,7 @@ export function Navigation() {
               to='/order'
               style={({ isActive }) => {
                 return {
-                  color: isActive ? 'red' : 'black',
+                  color: isActive ? 'var(--activeGreen)' : 'black',
                 };
               }}
             >
@@ -66,7 +62,7 @@ export function Navigation() {
               to='/login'
               style={({ isActive }) => {
                 return {
-                  color: isActive ? 'red' : 'black',
+                  color: isActive ? 'var(--activeGreen)' : 'black',
                 };
               }}
             >
