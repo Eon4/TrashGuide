@@ -1,15 +1,17 @@
 
 .nav {
-  height: 10vh;
+  height: 126px;
   width: 100%;
-  background-color: pink;
+  background-color: var(--snowWhite);
+  font-family: var(--fontFamily);
+  font-size: 18px;
   section {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    // justify-items: center;
     align-items: center;
-    max-width: 1700px;
+    max-width: 2000px;
     margin: auto;
     ul {
       display: flex;
@@ -23,7 +25,15 @@
     }
   }
 }
+.logoFont{
+  font-size: 22px;
 
+}
+.Unlocklogo{
+ size: 27px;
+ border-radius: 50%;
+ border-color: pink;
+}
 
 //Tablet
 @media screen and (max-width: 768px) {

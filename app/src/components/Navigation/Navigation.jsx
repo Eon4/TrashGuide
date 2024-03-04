@@ -1,6 +1,7 @@
 
 import { NavLink } from 'react-router-dom';
-// import logo from '../../assets/logo.svg';
+import logo from '../../assets/image/Logo/logo.svg';
+import unlockLogo from '../../assets/image/Logo/icon-unlock.svg';
 import style from './Navigation.module.scss';
 
 export function Navigation() {
@@ -8,7 +9,8 @@ export function Navigation() {
     <nav className={style.nav}>
       <section>
         <div className={style.logo}>
-          <img src='' alt='Logo' />
+        <img src={logo} alt='Logo' />
+        <h1 className={style.logoFont}>Affaldsguiden</h1>
         </div>
         <ul>
           <li>
@@ -72,6 +74,9 @@ export function Navigation() {
             </NavLink>
           </li>
         </ul>
+        <div className={style.Unlocklogo}>
+        <img src={unlockLogo} alt='unlock' />
+        </div>
       </section>
     </nav>
   );

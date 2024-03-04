@@ -1,7 +1,59 @@
 
-.footer {
-  height: 200px;
+
+
+footer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--greenWoods);
+  .footer {
+    max-width: 1230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+
+    .links,
+    .politik {
+      display: flex;
+      flex-direction: column;
+    }
+    h4 {
+      font-size: 1rem;
+      padding-bottom: 23px;
+      font-family: var(--FontRoboto);
+    }
+    p {
+      font-size: 1rem;
+      font-family: var(--FontRoboto);
+      color: rgb(255, 255, 255);
+
+
+    }
+    a {
+      text-decoration: none;
+      
+    }
+  }
+}
+
+// Mobile Version
+
+$mobile: 500px;
+footer {
+  @media screen and (max-width: $mobile) {
+  .footer {
+    display: flex;
+   flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    h4 {
+      padding-bottom: 5px;
+    }
+  }
+  }
 }
 
 //Tablet
