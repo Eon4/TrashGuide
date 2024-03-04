@@ -1,0 +1,35 @@
+
+.nav {
+  height: 10vh;
+  width: 100%;
+  background-color: pink;
+  section {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 1700px;
+    margin: auto;
+    ul {
+      display: flex;
+      li {
+        list-style-type: none;
+        padding: 0 10px 0px 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+//Tablet
+@media screen and (max-width: 768px) {
+}
+//Mobile
+@media screen and (max-width: 600px) {
+}
+
+
