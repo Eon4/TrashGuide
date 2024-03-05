@@ -1,11 +1,12 @@
 
-
-
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: var(--greenWoods);
+  margin: 5px;
+  font-family: var(--muliFont);
+
   .footer {
     max-width: 1230px;
     display: grid;
@@ -19,11 +20,10 @@ footer {
     h4 {
       font-size: 1rem;
       padding-bottom: 23px;
-      font-family: var(--FontRoboto);
+      margin-top: 5px;
     }
     p {
       font-size: 1rem;
-      font-family: var(--FontRoboto);
       color: rgb(255, 255, 255);
 
 

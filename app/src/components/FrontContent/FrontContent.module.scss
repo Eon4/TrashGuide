@@ -1,0 +1,66 @@
+// FrontContent.module.scss
+ 
+.FrontContainer01, .FrontContainer02 {
+    // margin-top: 30px;
+    font-family: var(--muliFont);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .Container01, .Container02 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+
+li {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;  // Adjust the gap between buttons as needed
+
+    button {
+      background-color: var(--greenWoods);
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      width: 100%;
+      text-align: center;
+      width: 173px;
+      height: 65px;
+      font-family: var(--muliFont);
+      margin: 5px;
+      
+
+      &:hover {
+        background-color: forestgreen;
+      }
+    }
+  }
+
+  h2 {
+    color: rgb(33, 39, 24);
+    font-size: 74px;
+    margin: 5px;
+    
+  }
+
+
+.FrontImage {
+    width: 612px;
+    height: 707px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 1s ease;
+    border-radius: 15px;
+
+  }
+  

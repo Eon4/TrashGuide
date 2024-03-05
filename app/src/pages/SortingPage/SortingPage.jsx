@@ -1,5 +1,4 @@
 
-
 // import style from './SortingPage.module.scss'
 
 export const SortingPage = () => {
