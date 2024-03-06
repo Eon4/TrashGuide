@@ -22,7 +22,7 @@ export const Accordion = ({ id, imgSrc, title }) => {
           className={style.accordionTitle}
           onClick={() => setIsActive(!isActive)}
         >
-          <img src={imgSrc} alt={title} />
+          <img className={style.iconImg} src={imgSrc} alt={title} />
           <h4>{title}</h4>
         </section>
         {isActive && (
@@ -34,9 +34,9 @@ export const Accordion = ({ id, imgSrc, title }) => {
                 <section key={index}>
                   {item.rules.is_allowed && (
                     <section>
-                      <ul>
+                      {/* <ul> */}
                         <p>{item.title}</p> <p>Ja tak</p>
-                      </ul>
+                      {/* </ul> */}
                     </section>
                   )}
                 </section>

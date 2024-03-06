@@ -23,8 +23,8 @@ export const SortingPage = () => {
   return (
     <>
 
-    <h3>Din guide</h3>
-    <h3>til en sund affaldssortering</h3>
+    <h3 className={style.dinGuide}>Din guide</h3>
+    <h3 className={style.sundAffald}>til en sund affaldssortering</h3>
 
     <div className={style.SortMyTrashWrapper}>
       {sortedTrash.map((item) => (
