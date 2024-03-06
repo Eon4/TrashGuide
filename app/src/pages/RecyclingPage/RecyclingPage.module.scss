@@ -1,4 +1,15 @@
 
+.SortMyRecyclingCard{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin: 0 auto;
+    max-width: 1800px; 
+    // bottom: 100px;
+    // z-index: 1;
+}
+
 
 //Tablet
 @media screen and (max-width: 768px) {

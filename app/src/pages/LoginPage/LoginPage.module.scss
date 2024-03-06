@@ -15,6 +15,17 @@
       height: 45px;
     }
   }
+.passwordInputContainer {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
 
 }
@@ -29,11 +40,5 @@
 }
 
 
-  //Tablet
-@media screen and (max-width: 768px) {
-}
-//Mobile
-@media screen and (max-width: 600px) {
-}
 
 

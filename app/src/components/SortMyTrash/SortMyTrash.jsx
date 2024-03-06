@@ -17,7 +17,6 @@ const SortMyTrashCard = ({ id, title, filename, filepath, color }) => {
   }, [id]);
 
   const handleClick = () => {
-    // Navigate to the SortingPageDetails with the id parameter
     navigate(`/sorting/${id}`);
 };
 
