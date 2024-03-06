@@ -10,45 +10,46 @@ export const SortingPageDetails = () => {
   const { id } = useParams();
 
   const {
-    data: detailsData,
+    data: sectionData,
     loading: sectionLoading,
     error: sectionError,
   } = useFetch(`http://localhost:3000/section/${id}`);
   
-  console.log("URL:", `http://localhost:3000/section/${id}`);
-  console.log("Response:", detailsData);
+  // console.log("URL:", `http://localhost:3000/section/${id}`);
+  // console.log("Response:", sectionData);
+
+  const titleContainerColor = {
+    backgroundColor: sectionData ? `#${sectionData.color}` : "transparent",
+  };
+
 
   return (
-    <>
-      <section className={style.TrashDetailsCard}>
-        {detailsData && (
+    <div className={style.pageContainer}>
+
+    <section className={style.detailPage}>
+      <article className={style.detailContainer}>
+        {sectionLoading && <div>Loading...</div>}
+        {sectionError && <div>Error: {sectionError.message}</div>}
+        {sectionData && (
           <>
-            <h3>{detailsData.title}</h3>
-            <img src={detailsData.filepath} alt={detailsData.title} />
-            <div>
-              {detailsData.categories && detailsData.categories.map(category => (
-                <div key={category.id}>
-                  <h4>{category.title}</h4>
-                  <img src={category.icon_filepath} alt={category.title} />
-                  <ul className={style.accordionList}>
-                    {detailsData.categories.map(subcategory => (
-                      <Accordion
-                        key={subcategory.id}
-                        id={subcategory.id}
-                        img={subcategory.icon_filepath}
-                        title={subcategory.title}
-                        filepath={subcategory.image_filepath}
-                      />
-                    ))}
-                  </ul>
-                </div>
-              ))}
+            <div  className={style.detailTitle}>
+              <h3 style={titleContainerColor}>{sectionData?.title}</h3>{" "}
+              <img src={sectionData?.filepath} alt={sectionData?.title} />
             </div>
+            <ul className={style.accordionList}>
+              {sectionData.categories.map((category) => (
+                <Accordion
+                  key={category.id}
+                  id={category.id}
+                  imgSrc={category.icon_filepath}
+                  title={category.title}
+                />
+              ))}
+            </ul>
           </>
         )}
-      </section>
-    </>
+      </article>
+    </section>
+    </div>
   );
-  
-
-  }
+};
