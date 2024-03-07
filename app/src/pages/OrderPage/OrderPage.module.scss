@@ -1,30 +1,31 @@
-
-.OrderMyContainer{
-
+.OrderMyContainer {
     background-color: var(--ironGiant);
     width: 1384px;
-height: 1046px;
-border-radius: 5px;
-
-
-.OrderMyContainerWrapper{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 0 auto;
-    max-width: 1800px; 
-    // background-color: pink;
-    width: 529px;
-height: 434px;
-}
-
-.orderButton{
-    background-color: var(--ordreGreen);
-    width: 110px;
-    height: 34px;    
-    border-radius: 4px;
-}
-
-
-}
+    height: 1046px;
+    border-radius: 5px;
+  
+    .OrderMyContainerWrapper {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 0 auto;
+      max-width: 1800px;
+      width: 529px;
+      height: 434px;
+    }
+  
+    .orderButton {
+      background-color: var(--ordreGreen);
+      width: 110px;
+      height: 34px;
+      border-radius: 4px;
+  
+      &:hover {
+        cursor: pointer;
+        background-color:var(--myGreenForest);
+        color: var(--snowWhite);
+      }
+    }
+  }
+  

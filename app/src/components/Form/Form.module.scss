@@ -1,0 +1,48 @@
+
+
+.sendFormStyle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-width: 400px;
+    padding-left: 41px;
+    padding-bottom: 190px;
+
+
+    span{
+        color: rgb(255, 38, 0);
+        font-weight: bold;
+    }
+
+
+    label {
+        color: $salmon;
+        font-size: 14px;
+        font-weight: bold;
+
+        input {
+            color: rgb(0, 0, 0);
+            background-color: #FFFFFF;
+            top: 204px;
+            left: 184px;
+            width: 407px;
+            height: 38px;
+            border-radius: 5px;
+        }
+    }
+
+   }
+
+    @media (max-width: 768px) {
+        label {
+            input {
+                font-size: 12px; 
+            }
+        }
+
+        textarea {
+            font-size: 12px
+        }
+    }
+
+
