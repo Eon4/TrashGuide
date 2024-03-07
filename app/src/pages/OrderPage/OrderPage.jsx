@@ -1,7 +1,8 @@
-// Order Page 
+// Order Page One
 import { useEffect, useState } from 'react';
 import style from './OrderPage.module.scss';
 import { ShowMyContainerCard } from '../../components/ContainerCard/ContainerCard';
+import { NavLink } from 'react-router-dom';
 
 export const OrderPage = () => {
   const [orderContainer, setOrderContainer] = useState([]);
@@ -33,9 +34,9 @@ export const OrderPage = () => {
       ))}
               </div>
 
-<button className={style.orderButton} >
+  <NavLink to="/sendorder" className={style.orderButton}>
   Videre
-  </button>    
+</NavLink>  
 </div>
   );
 };

@@ -1,11 +1,7 @@
-//Inspiration from project: https://github.com/Eon4/WallyWoodProject/blob/main/wood/src/Pages/SignUp.jsx with Kasper
-import { useState, useEffect } from 'react';
-import { useForm } from "react-hook-form";
+//Inspiration from earlier project with Kasper: https://github.com/Eon4/WallyWoodProject/blob/main/wood/src/Pages/SignUp.jsx
 import style from "./form.module.scss";
 
 const sendForm = () => {
-
-
   
     return (
       <>  

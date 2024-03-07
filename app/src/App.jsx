@@ -8,8 +8,8 @@ import { SortingPageDetails } from './pages/SortingPageDetails/SortingPageDetail
 import { RecyclingPage } from './pages/RecyclingPage/RecyclingPage';
 import { RecyclingPageDetails } from './pages/RecyclingPageDetails/RecyclingPageDetails';
 import { OrderPage } from './pages/OrderPage/OrderPage';
+import { OrderPageTwo } from './pages/OrderPage/OrderPagePartTwo';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
-
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
           <Route path="/sorting/:id" element={<SortingPageDetails/>}/>
           <Route path='/recycling' element={<RecyclingPage />} />
           <Route path="/recycling/:id" element={<RecyclingPageDetails/>}/>
-
           <Route path='/order' element={<OrderPage />} />
+          <Route path='/sendorder' element={<OrderPageTwo />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/*' element={<NotFoundPage />} />          
         </Route>
