@@ -1,4 +1,3 @@
-
 // Order Page 
 import { useEffect, useState } from 'react';
 import style from './OrderPage.module.scss';
@@ -8,7 +7,7 @@ export const OrderPage = () => {
   const [orderContainer, setOrderContainer] = useState([]);
 
   useEffect(() => {
-    // Fetch recycling data from the API
+    // Fetch containers data from the API
     fetch('http://localhost:3000/containers')
       .then((res) => res.json())
       .then((data) => setOrderContainer(data))
@@ -17,6 +16,13 @@ export const OrderPage = () => {
 
   return (
     <div className={style.OrderMyContainer}>
+      <p>Trin 1</p>
+      <h3>Vælg type</h3>
+      <p>Tation argumentum et usu, dicit viderer evertitur te has. 
+        Eu dictas <br /> concludaturque usu, facete detracto patrioque 
+        an per, lucilius <br /> pertinacia eu vel.</p>
+        <div className={style.OrderMyContainerWrapper} >
+
       {orderContainer.map((container) => (
         <ShowMyContainerCard 
         key={container.id} 
@@ -25,7 +31,11 @@ export const OrderPage = () => {
         icon={container.icon_filename} 
         />
       ))}
-      <h1>Order Container Page</h1>
-    </div>
+              </div>
+
+<button className={style.orderButton} >
+  Videre
+  </button>    
+</div>
   );
 };

@@ -24,9 +24,6 @@ export const ShowMyContainerCard = ({ id, name, icon_filename }) => {
     case 4:
       icon = batteryIcon;
       break;
-
-    default:
-      icon = null; // Can set an default icon or handle the case, if the id doesn't match any known icons
   }
 
   useEffect(() => {
@@ -42,10 +39,15 @@ export const ShowMyContainerCard = ({ id, name, icon_filename }) => {
 
   return (
     <div className={style.MyContainerCard}>
-      {icon && <img src={icon} alt={`${name} Icon`} />}
+            <section>
 
-      <section>
-        <h5>{name}</h5>
+      <img src={icon} alt={`${name} Icon`} />
+      <input className={style.checkBox} type="checkbox" />
+
+      {/* <input className={style.radioButton} type="radio" /> */}
+
+
+        <h6 className={style.ContainerCardText} >{name}</h6>
       </section>
     </div>
   );

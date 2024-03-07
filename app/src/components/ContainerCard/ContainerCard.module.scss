@@ -1,0 +1,36 @@
+
+
+.MyContainerCard{
+
+margin: auto;
+padding: 5px;
+border-radius: 5px;
+width: 251px;
+height: 194px;
+// border: 1px ;
+border-radius: 5px;
+background-color: var(--snowWhite);
+
+
+
+
+  .checkBox{
+    position: absolute;
+    // border-radius: 5px;
+}
+
+// section{
+//     background-color: pink;
+// }
+  
+img{
+    // width: 80px;
+    height: 71px;
+}
+
+}
+.ContainerCardText{
+    font-size: 23px;
+    font-family: var(--muliFont);
+
+}
