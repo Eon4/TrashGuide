@@ -1,14 +1,14 @@
 // Sort My Trash component
 import style from './SortMyTrash.module.scss';
 import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const SortMyTrashCard = ({ id, title, filename, filepath, color }) => {
   const [trash, setTrash] = useState({});
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch additional details for each trash type using the id
+    // Fetch additional details for each trash type using the ID
     let url = `http://localhost:3000/section/${id}`;
     fetch(url)
       .then((res) => res.json())
@@ -22,7 +22,7 @@ const SortMyTrashCard = ({ id, title, filename, filepath, color }) => {
 
   // Style for the text with the corresponding background color
   const textStyle = {
-    background: `#${color}`, // Assuming the color is in hexadecimal format
+    background: `#${color}`, // We are assuming the color is in hexadecimal format
   };
 
   // Render component

@@ -1,10 +1,9 @@
 
 // RecyclingPageDetails
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from './RecyclingPageDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import ReviewStars from '../../components/ReviewStars/ReviewStars';
-
 
 export const RecyclingPageDetails = () => {
   const { id } = useParams();
@@ -18,12 +17,12 @@ export const RecyclingPageDetails = () => {
         const response = await fetch(`http://localhost:3000/reviews/${id}`);
         const data = await response.json();
   
-        // Check if the returned data is an array or an object
+        // We are checking if the returned data is an array or an object
         if (Array.isArray(data)) {
-          // If it's an array, set the first element as the sectionData
+          // If it's an array, we are setting the first element as the sectionData
           setSectionData(data.length > 0 ? data[0] : null);
         } else {
-          // If it's an object, set it directly as the sectionData
+          // If it's an object, setting it directly as the sectionData
           setSectionData(data);
         }
       } catch (error) {

@@ -1,4 +1,4 @@
-//For useFetch
+//useFetch from an another assignment: https://github.com/Eon4/Hotel-Overlook/blob/main/hotel/src/hooks/useFetch.jsx
 import { useEffect, useState } from "react";
 
 export const useFetch = (url) => {

@@ -1,5 +1,5 @@
 //Accordion component 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from './Accordion.module.scss';
 import { useFetch } from '../../hooks/useFetch';
 import { IoIosArrowDropupCircle, IoIosArrowDropdownCircle } from "react-icons/io";
@@ -10,8 +10,6 @@ export const Accordion = ({ id, imgSrc, title }) => {
   const { data, loading, error } = useFetch(
     `http://localhost:3000/category/details/${id}`
   );
-
-
   
   return (
     <section className={style.accordionContainer}>

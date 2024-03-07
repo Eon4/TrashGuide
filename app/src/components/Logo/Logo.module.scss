@@ -2,19 +2,17 @@
 //logo scss
 .logo {
     display: flex;
-    align-items: center;  // Vertically align items to the center
+    align-items: center;  
     color: rgb(0, 0, 0);
     font-size: 22px;
     padding: 10px;
     font-family: var(--fontFamily);
   
     .logoText {
-      margin-left: 10px;  // Adjust the margin as needed
+      margin-left: 10px;  
     }
   }
   
-  
-
     .footerLogo{
         color: rgb(164, 7, 7);
         // background-color: rgb(157, 136, 128);

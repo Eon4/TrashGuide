@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { RecyclingCard } from '../../components/RecyclingCard/RecyclingCard';
 import { useNavigate } from 'react-router-dom';
 
-
 export const RecyclingPage = () => {
   const [sortedRecycle, setSortedRecycle] = useState([]);
   const navigate = useNavigate();

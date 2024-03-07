@@ -1,11 +1,10 @@
 
 // Logo prop component
-import React from 'react';
 import style from './Logo.module.scss';
 import logo from '../../assets/image/Logo/logo.svg';
 
 const Logo = ({ text, isFooter }) => {
-  // Conditionally apply styles based on isFooter prop
+  // Here we conditionally apply styles based on the isFooter prop
   const logoClassName = isFooter ? style.footerLogo : style.logo;
 
   return (

@@ -1,9 +1,7 @@
-
 import { NavLink } from 'react-router-dom';
 import unlockLogo from '../../assets/image/Logo/icon-unlock.svg';
 import style from './Navigation.module.scss';
 import Logo from '../Logo/Logo';
-
 
 export function Navigation() {
   return (

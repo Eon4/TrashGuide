@@ -1,15 +1,12 @@
 //Front Conent for the frontpage
-import React from 'react';
 import style from './FrontContent.module.scss';
 import { useNavigate } from 'react-router-dom';
 import trashFront from '../../assets/image/FrontImages/trashFront.jpg';
 import binFront from '../../assets/image/FrontImages/BinFront.jpg';
 
-
 export const FrontContent = () => {
 
     const navigate = useNavigate();
-
     const handleSortingClick = () => {
       navigate('/sorting');
     };

@@ -1,5 +1,5 @@
 // ReviewStars component
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import style from './ReviewStars.module.scss';
 import { FaStar } from 'react-icons/fa';
 

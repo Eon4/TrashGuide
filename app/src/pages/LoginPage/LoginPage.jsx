@@ -4,12 +4,10 @@ import style from "./LoginPage.module.scss";
 import { UserContext } from "../../context/userContext";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-
-// Functional component for the login page
 export const LoginPage = () => {
-  // State to manage login message
+  // A state to manage login message
   const [message, setMessage] = useState("Indtast login oplysninger");
-  // Destructure setUserData and userData from UserContext
+  // Destructuring setUserData and userData from UserContext
 
   const { setUserData, userData } = useContext(UserContext);
   const [showPassword, setShowPassword] = useState(false);
@@ -49,7 +47,7 @@ export const LoginPage = () => {
   
       let data = await res.json();
 
-  //Got data?
+     //Got data:)?
       console.log(data);
   
       if (data?.access_token) {
@@ -68,18 +66,14 @@ export const LoginPage = () => {
     }
   }
   
-
-  // Render component
   return (
     <>
-      {/* Display the title using the Title component */}
-
       {/* {!userData ? ( */}
         <form
           className={style.loginFormStyle}
           onSubmit={(event) => handleLogin(event)}
         >
-          {/* Display login message */}
+          {/* Displaying a login message */}
           {message && <b>{message}</b>}
 
           <label>

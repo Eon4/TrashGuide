@@ -3,7 +3,6 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop ";
 import style from './Footer.module.scss'
 import Logo from '../Logo/Logo';
 
-
 export const Footer = () => {
 
     return (

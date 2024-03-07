@@ -1,5 +1,4 @@
 
-    // Order Page 
 // Order Page 
 import { useEffect, useState } from 'react';
 import style from './OrderPage.module.scss';
@@ -19,7 +18,12 @@ export const OrderPage = () => {
   return (
     <div className={style.OrderMyContainer}>
       {orderContainer.map((container) => (
-        <ShowMyContainerCard key={container.id} id={container.id} name={container.name} icon_filename={container.icon_filename} />
+        <ShowMyContainerCard 
+        key={container.id} 
+        id={container.id} 
+        name={container.name} 
+        icon={container.icon_filename} 
+        />
       ))}
       <h1>Order Container Page</h1>
     </div>

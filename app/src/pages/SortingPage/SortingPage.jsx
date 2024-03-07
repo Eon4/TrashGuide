@@ -14,10 +14,10 @@ export const SortingPage = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  // Define the custom order of ids
+  // Defining the custom order of IDs
   const customOrder = [12, 9, 6, 5, 8, 3, 11, 1, 10, 7, 4, 2];
 
-  // Sort the categories based on the custom order
+  // Sorting the categories based on the custom order
   const sortedTrash = [...trash].sort((a, b) => customOrder.indexOf(a.id) - customOrder.indexOf(b.id));
 
   return (

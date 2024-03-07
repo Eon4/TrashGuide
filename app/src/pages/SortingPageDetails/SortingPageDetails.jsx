@@ -1,6 +1,5 @@
-//Accordian is from a combelation with other developers in a code Challenge: https://github.com/Eon4/CodeChallenge/tree/main/code/src/Components/Accordion 
+//Accordian is from a collaboration with other developers in a code Challenge: https://github.com/Eon4/CodeChallenge/tree/main/code/src/Components/Accordion 
 // SortingPageDetails
-import React from 'react'; // Don't forget to import React
 import style from './SortingPageDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import { Accordion } from '../../components/Accordion/Accordion';

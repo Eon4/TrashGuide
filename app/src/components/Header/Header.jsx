@@ -21,7 +21,7 @@ export const Header = () => {
    useEffect(() => {
      // Set an interval for automatic image transition
      const intervalId = setInterval(() => {
-       // Trigger the fading effect
+       // Triggering the fading effect
        setFade(true);
  
        // After 1 second, update the current image index
