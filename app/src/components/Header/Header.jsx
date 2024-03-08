@@ -1,4 +1,4 @@
-//Code is from an early assignment 
+//Code is from an early assignment: https://github.com/Eon4/Hotel-Overlook/blob/main/hotel/src/components/Header/header.jsx 
 import { useEffect, useState } from "react";
 import style from "./Header.module.scss";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
@@ -21,7 +21,7 @@ export const Header = () => {
    useEffect(() => {
      // Set an interval for automatic image transition
      const intervalId = setInterval(() => {
-       // Triggering the fading effect
+       // Triggering the fading effect here
        setFade(true);
  
        // After 1 second, update the current image index
@@ -46,7 +46,7 @@ export const Header = () => {
      );
    };
  
-   // Function to handle clicking on the next arrow
+   // A function to handle clicking on the next arrow
    const handleNextClick = () => {
      setCurrentImageIndex((prevIndex) =>
        prevIndex === imageUrls.length - 1 ? 0 : prevIndex + 1
@@ -55,19 +55,17 @@ export const Header = () => {
  
    return (
      <div className={style.headerContainer}>
-       {/* Left arrow for navigating to the previous image */}
        <BsArrowLeftCircle className={style.leftArrow} onClick={handlePrevClick} />
  
        {/* Container for the image with fading effect */}
        <div
          className={`${style.headerImage} ${fade ? style.fade : ""}`}
          style={{
-           // Set the background image dynamically based on the current index
+           // Seting the background image dynamically based on the current index
            backgroundImage: `url(${imageUrls[currentImageIndex]})`,
          }}
        />
  
-       {/* Right arrow for navigating to the next image */}
        <BsArrowRightCircle className={style.rightArrow} onClick={handleNextClick} />
      </div>
    );

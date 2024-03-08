@@ -1,11 +1,14 @@
 
-
 h3{
 text-align: center;
 font-size: 30px;
 font-family: var(--muliFont);
 color: var(--greenWoods);
 
+@media screen and (max-width: 768px) {
+font-size: 25px;
+margin: 5px;
+ }
 }
 
 .dinGuide{
@@ -18,17 +21,9 @@ color: var(--greenWoods);
   gap: 70px;
   margin: 0 auto;
   max-width: 1800px; 
-  // bottom: 100px;
-  // z-index: 1;
 
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
 }
-
-
-  //Tablet
-@media screen and (max-width: 768px) {
-}
-//Mobile
-@media screen and (max-width: 600px) {
-}
-
-

@@ -1,53 +1,64 @@
-
 .nav {
   height: 126px;
   width: 100%;
   background-color: var(--snowWhite);
   font-family: var(--muliFont);
-  // font-size: 18px;
   font-size: 20px;
 
+  @media screen and (max-width: 768px) {
+    height: auto;
+    font-size: 16px;
+    section {
+      display: grid;
+      grid-template-columns: 1fr; 
+      text-align: center; 
+      ul {
+        flex-direction: column; 
+        li {
+          padding: 10px 0; 
+        }
+      }
+    }
+  }
+
   section {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    // justify-items: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 2000px;
     margin: auto;
+
     ul {
       display: flex;
+      margin: 0;
+
       li {
         list-style-type: none;
-        padding: 0 10px 0px 10px;
+        padding: 0 10px;
+
         a {
           text-decoration: none;
+          color: black;
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--activeGreen);
+          }
+
+          .Unlocklogo {
+            width: 20px;
+            border-color: pink;
+            background-color: var(--ordreGreen);
+            border-radius: 5px;
+            transition: transform 0.3s, background-color 0.3s;
+
+            &:hover {
+              background-color: var(--greenBottle);
+              transform: scale(1.1);
+            }
+          }
         }
       }
     }
   }
 }
-.Unlocklogo{
-  width: 20px;
-  // border-radius: 50%;
- border-color: pink;
- background-color: var(--ordreGreen);
- border-radius: 5px;
- transition: transform 0.3s; 
-
-
- :hover{
-  background-color: var(--greenBottle);
-  transform: scale(2.1);
-
-}
-}
-
-//Tablet
-@media screen and (max-width: 768px) {
-}
-//Mobile
-@media screen and (max-width: 600px) {
-}
-
-

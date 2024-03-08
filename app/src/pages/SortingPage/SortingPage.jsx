@@ -1,4 +1,3 @@
-// SortingPage
 import { useEffect, useState } from 'react';
 import style from './SortingPage.module.scss';
 import SortMyTrashCard from './../../components/SortMyTrash/SortMyTrash';
@@ -22,7 +21,6 @@ export const SortingPage = () => {
 
   return (
     <>
-
     <h3 className={style.dinGuide}>Din guide</h3>
     <h3 className={style.sundAffald}>til en sund affaldssortering</h3>
 

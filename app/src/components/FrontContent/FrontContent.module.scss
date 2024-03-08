@@ -1,12 +1,17 @@
  
 .FrontContainer01, .FrontContainer02 {
-    // margin-top: 30px;
     font-family: var(--muliFont);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     margin: 50px;
+
+    @media screen and (max-width: 768px) {
+      margin: 20px; 
+      text-align: center; 
+      align-items: center; 
+    }
   }
   
   .Container01, .Container02 {
@@ -14,6 +19,10 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
+    @media screen and (max-width: 768px) {
+      align-items: center;
+   }
   }
 
 
@@ -41,6 +50,10 @@ li {
       &:hover {
         background-color: forestgreen;
       }
+
+      @media screen and (max-width: 768px) {
+        width: 100%; 
+    }
     }
   }
 
@@ -48,9 +61,12 @@ li {
     color: rgb(33, 39, 24);
     font-size: 74px;
     margin: 5px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 40px; 
+  }
     
   }
-
 
 .FrontImage {
     width: 612px;
@@ -60,6 +76,9 @@ li {
     background-position: center;
     transition: opacity 1s ease;
     border-radius: 15px;
-
+    @media screen and (max-width: 768px) {
+      width: 100%; 
+      height: auto; 
+   }
   }
   

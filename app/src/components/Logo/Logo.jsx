@@ -1,5 +1,4 @@
 
-// Logo prop component
 import style from './Logo.module.scss';
 import logo from '../../assets/image/Logo/logo.svg';
 

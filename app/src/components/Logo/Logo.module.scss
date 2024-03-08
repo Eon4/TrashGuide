@@ -1,26 +1,38 @@
-
-//logo scss
 .logo {
-    display: flex;
-    align-items: center;  
-    color: rgb(0, 0, 0);
-    font-size: 22px;
-    padding: 10px;
-    font-family: var(--fontFamily);
-  
+  display: flex;
+  align-items: center;
+  justify-content: center; // Add this line
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  padding: 10px;
+  font-family: var(--fontFamily);
+
+  .logoText {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
     .logoText {
-      margin-left: 10px;  
+      margin-left: 0;
+      margin-top: 5px;
     }
   }
-  
-    .footerLogo{
-        color: rgb(164, 7, 7);
-        // background-color: rgb(157, 136, 128);
-        border-radius: 1px;
-        border-color: black;
-        border-width: 4px;
-        padding: 10px;
-        justify-content: left;
-        font-family: var(--greenBottle);
-        font-size: 38px;
-      }
+}
+
+.footerLogo {
+  color: rgb(164, 7, 7);
+  border-radius: 1px;
+  border-color: black;
+  border-width: 4px;
+  padding: 10px;
+  justify-content: left;
+  font-family: var(--greenBottle);
+  font-size: 38px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}

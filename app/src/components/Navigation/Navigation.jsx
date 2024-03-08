@@ -58,11 +58,6 @@ export function Navigation() {
           <li>
             <NavLink
               to='/login'
-              // style={({ isActive }) => {
-              //   return {
-              //     color: isActive ? 'var(--activeGreen)' : 'black',
-              //   };
-              // }}
             >
                <div>
         <img className={style.Unlocklogo} src={unlockLogo} alt='unlock' />
@@ -71,9 +66,6 @@ export function Navigation() {
             </NavLink>
           </li>
         </ul>
-        {/* <div className={style.Unlocklogo}>
-        <img src={unlockLogo} alt='unlock' />
-        </div> */}
       </section>
     </nav>
   );
