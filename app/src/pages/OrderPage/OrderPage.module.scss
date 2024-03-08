@@ -1,18 +1,18 @@
 .OrderMyContainer {
     background-color: var(--ironGiant);
-    width: 1384px;
+    // width: 1384px;
     height: 1046px;
     border-radius: 5px;
   justify-content: space-between;
-  margin: auto; 
+  max-width: 1384px; 
+  margin: auto;
+  padding: 20px; 
 
-  // aside{
-  //   background-color:green;
-  //   height: 200px;
-  //   margin-right: 1000px; 
-  //   padding: 20px; 
-  // }
+  @media screen and (max-width: 768px) {
+    border-radius: 0; 
+    margin-bottom: 90px;
 
+  }
   
     .OrderMyContainerWrapper {
       position: relative;
@@ -23,8 +23,16 @@
       max-width: 1800px;
       width: 529px;
       height: 434px;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        gap: 10px; 
+        width: auto;
+        margin: auto ;
+      }
     }
-  
+
     .orderButton {
       display: block ; 
       width: 210px;
@@ -42,18 +50,44 @@
         background-color: var(--myGreenForest);
         color: var(--snowWhite);
       }
+      @media screen and (max-width: 768px) {
+   align-items: center;
+   margin-top: 350px; 
+   width: auto;
+   position: absolute; 
+   z-index: 2;
+   position: absolute;
+   text-align: center;
+   font-size: 1520x;
+
+      }
     }
 
     .stepText{
       font-size: 25px;
+
+         
+      @media screen and (max-width: 768px) {
+   text-align: center;
+      }
     }
 
     .containerHeadline{
       font-size: 46px;
       color: var(--darkKnight);
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+           }
     }
     p{
       font-size: 25px;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+           }
+           margin: 5px;
     }
+
+    
   }
   
