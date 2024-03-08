@@ -8,31 +8,10 @@ I have been tasked with building a frontend solution for the Waste Guide, which 
 
 The media graphic designer has provided an approved design that I need to set up the site according to. The programmer has provided a web-based API that I can use to manage the site's content. The API is built in NodeJS and can be obtained from a Github repository, installed, and run on a local machine.
 
-Project Structure:
 
 Installation:
 npm install 
 npm react icons 
-More to come.... 
-
-Usage:
-
-Explain how to use the project.
-Provide code examples or usage scenarios.
-
-Configuration:
-
-Database configuration, environment variables.?
-Contributing:
-
-License:?
-
-
-Acknowledgements?
-
-Mention any external libraries, tools, or resources you used and give credit to their creators.
-
-Link to or include documentation for the project, especially if it's extensive.
-Demo or Screenshots:
-
-Include a demo of the project or screenshots to give users a visual idea of what it looks like.
+react hook form
+sass
+react-router-dom.
