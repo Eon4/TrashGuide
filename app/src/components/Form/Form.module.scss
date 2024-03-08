@@ -1,5 +1,4 @@
 
-
 .sendFormStyle {
     display: grid;
     grid-template-columns: 1fr;
@@ -8,10 +7,6 @@
     padding-left: 41px;
     padding-bottom: 190px;
     font-family: var(--muliFont);
-
-    
-    
-
 
     span{
         color: var(--orangeLifeboat);
@@ -29,17 +24,20 @@
         margin-left: auto;
 
    
-        
             &:hover {
               cursor: pointer;
               background-color: var(--myGreenForest);
               color: var(--snowWhite);
             }
-          
 
-
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr; 
+                text-align: center;
+                gap: 10px; 
+                width: 250px;
+                margin: auto ;
+              } 
     }
-
 
     label {
         color: blue;
@@ -47,7 +45,6 @@
         font-weight: bold;
 
         input {
-            // color: rgb(0, 0, 0);
             background-color: #FFFFFF;
             top: 204px;
             left: 184px;
@@ -56,10 +53,18 @@
             border: none;
             border-radius: 5px;  
             
-            
             &::placeholder {
                 text-indent: 10px;
             }
+ 
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        gap: 10px; 
+        width: 250px;
+        margin: auto ;
+      }
+            
         }
        
     }

@@ -1,4 +1,3 @@
-// RecyclingCard component
 import style from './RecyclingCard.module.scss';
 import { useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';

@@ -4,10 +4,13 @@ import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import style from './GiveStars.module.scss'
 
+// A component to render star rating
 const GiveStars = () => {
+  // State to manage selected rating stars and hover state
   const [ratingStars, setRatingStars] = useState(null);
   const [hover, setHover] = useState(null);
 
+  // Render star rating using the map function
   return (
     <div className={style.GiveStars}>
       {[...Array(5)].map((star, index) => {

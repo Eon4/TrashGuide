@@ -1,4 +1,3 @@
-// Sort My Trash component
 import style from './SortMyTrash.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';

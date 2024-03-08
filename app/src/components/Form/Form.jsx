@@ -1,6 +1,5 @@
 //Inspiration from earlier project with Kasper: https://github.com/Eon4/WallyWoodProject/blob/main/wood/src/Pages/SignUp.jsx
 
-//Form component
 import { useForm } from 'react-hook-form';
 import style from './Form.module.scss';
 
@@ -38,8 +37,6 @@ export const SendForm = ({ id, onChange }) => {
     }
   };
   
-
-
   return (
     <form className={style.sendFormStyle} onSubmit={handleSubmit(onSubmit)}>
       <label>

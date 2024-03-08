@@ -1,4 +1,3 @@
-// My container card component
 import style from './ContainerCard.module.scss';
 import { useEffect, useState } from 'react';
 import restaffaldIcon from '../../assets/image/Icons/restaffald.svg';
@@ -7,9 +6,10 @@ import waterBottleIcon from '../../assets/image/Icons/water-bottle.svg';
 import batteryIcon from '../../assets/image/Icons/battery.svg';
 
 export const ShowMyContainerCard = ({ id, name, icon_filename }) => {
+  // State to manage icon content
   const [iconContent, setIconContent] = useState('');
 
-//DIFFERENCE BETWEEN LET AND CONST
+  // This ia a switch statement to determine which icon to use based on container ID
   let icon;
   switch (id) {
     case 1:
@@ -26,6 +26,7 @@ export const ShowMyContainerCard = ({ id, name, icon_filename }) => {
       break;
   }
 
+  // Fetch container data from the API when component mounts or ID changes
   useEffect(() => {
     let url = `http://localhost:3000/containers/${id}`;
     fetch(url)
@@ -45,8 +46,6 @@ export const ShowMyContainerCard = ({ id, name, icon_filename }) => {
       <input className={style.checkBox} type="checkbox" />
 
       {/* <input className={style.radioButton} type="radio" /> */}
-
-
         <h6 className={style.ContainerCardText} >{name}</h6>
       </section>
     </div>

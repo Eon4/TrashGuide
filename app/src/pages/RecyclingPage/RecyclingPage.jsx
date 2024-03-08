@@ -9,7 +9,7 @@ export const RecyclingPage = () => {
 
   const navigate = useNavigate();
 
-  // useEffect to fetch recycling data when the component mounts
+  // A useEffect to fetch recycling data when the component mounts
   useEffect(() => {
     // Fetching recycling data from the API
     fetch('http://localhost:3000/orgs?attributes=id,name,address,zipcode,city')
