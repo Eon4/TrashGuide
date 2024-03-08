@@ -7,28 +7,61 @@
     max-width: 400px;
     padding-left: 41px;
     padding-bottom: 190px;
+    font-family: var(--muliFont);
+
+    
+    
 
 
     span{
-        color: rgb(255, 38, 0);
+        color: var(--orangeLifeboat);
         font-weight: bold;
+    }
+
+    button{
+        width: 210px;
+        height: 74px;
+        background-color: var(--ordreGreen);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: var(--muliFont);
+        margin-left: auto;
+
+   
+        
+            &:hover {
+              cursor: pointer;
+              background-color: var(--myGreenForest);
+              color: var(--snowWhite);
+            }
+          
+
+
     }
 
 
     label {
-        color: $salmon;
+        color: blue;
         font-size: 14px;
         font-weight: bold;
 
         input {
-            color: rgb(0, 0, 0);
+            // color: rgb(0, 0, 0);
             background-color: #FFFFFF;
             top: 204px;
             left: 184px;
             width: 407px;
             height: 38px;
-            border-radius: 5px;
+            border: none;
+            border-radius: 5px;  
+            
+            
+            &::placeholder {
+                text-indent: 10px;
+            }
         }
+       
     }
 
    }

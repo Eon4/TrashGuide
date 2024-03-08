@@ -1,2 +1,0 @@
-//Extra Map component
-

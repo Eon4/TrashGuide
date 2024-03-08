@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import style from './RecyclingPageDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import ReviewStars from '../../components/ReviewStars/ReviewStars';
+import GiveStars from '../../components/ReviewStars/GiveStars'
 
 export const RecyclingPageDetails = () => {
   const { id } = useParams();
@@ -39,6 +40,16 @@ export const RecyclingPageDetails = () => {
   return (
     <div className={style.pageContainer}>
       <h3>Recycling review page here</h3>
+
+      <GiveStars
+      
+      />
+
+      <h4>Skriv en kommentar</h4>
+      <textarea name="" id="" cols="30" rows="10">
+      </textarea>
+
+      <button>Kommenter</button>
 
       <section className={style.detailPage}>
       <ReviewStars id={id} />

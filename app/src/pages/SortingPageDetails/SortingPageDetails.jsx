@@ -32,8 +32,8 @@ export const SortingPageDetails = () => {
         {sectionData && (
           <>
             <div  className={style.detailTitle}>
-              <h3 style={titleContainerColor}>{sectionData?.title}</h3>{" "}
-              <img src={sectionData?.filepath} alt={sectionData?.title} />
+              <h3 className={style.UpperStyle} style={titleContainerColor}>{sectionData?.title}</h3>{" "}
+              <img className={style.trashImage} src={sectionData?.filepath} alt={sectionData?.title} />
             </div>
             <ul className={style.accordionList}>
               {sectionData.categories.map((category) => (

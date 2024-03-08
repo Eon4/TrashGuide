@@ -1,0 +1,22 @@
+
+.GiveStars {
+    display: flex;
+  
+    label {
+      position: relative;
+      cursor: pointer;
+  
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+  
+      .Starmie {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  

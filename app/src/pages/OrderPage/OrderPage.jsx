@@ -8,7 +8,6 @@ export const OrderPage = () => {
   const [orderContainer, setOrderContainer] = useState([]);
 
   useEffect(() => {
-    // Fetch containers data from the API
     fetch('http://localhost:3000/containers')
       .then((res) => res.json())
       .then((data) => setOrderContainer(data))
@@ -17,8 +16,13 @@ export const OrderPage = () => {
 
   return (
     <div className={style.OrderMyContainer}>
-      <p>Trin 1</p>
-      <h3>Vælg type</h3>
+      {/* <div>
+        <aside>
+          Breaddrumb container here
+        </aside>
+      </div> */}
+      <p className={style.stepText} >Trin 1</p>
+      <h3 className={style.containerHeadline} >Vælg type</h3>
       <p>Tation argumentum et usu, dicit viderer evertitur te has. 
         Eu dictas <br /> concludaturque usu, facete detracto patrioque 
         an per, lucilius <br /> pertinacia eu vel.</p>
@@ -34,8 +38,11 @@ export const OrderPage = () => {
       ))}
               </div>
 
-  <NavLink to="/sendorder" className={style.orderButton}>
-  Videre
+  <NavLink to="/sendorder">
+    <button className={style.orderButton}>
+    Videre
+
+    </button>
 </NavLink>  
 </div>
   );

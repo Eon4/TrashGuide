@@ -1,36 +1,40 @@
 
-
 .MyContainerCard{
-
-margin: auto;
-padding: 5px;
-border-radius: 5px;
-width: 251px;
-height: 194px;
-// border: 1px ;
-border-radius: 5px;
-background-color: var(--snowWhite);
-
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 251px;
+    height: 194px;
+    background-color: var(--snowWhite);
+    position: relative;
 
   .checkBox{
     position: absolute;
-    // border-radius: 5px;
+    right: 0; 
+    top: 0;
+    width: 18px; 
+    height: 18px; 
+    border-radius: 50%; 
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
-// section{
-//     background-color: pink;
-// }
-  
+
 img{
-    // width: 80px;
+    display: block; 
     height: 71px;
+    margin: 0 auto; 
 }
 
 }
 .ContainerCardText{
     font-size: 23px;
     font-family: var(--muliFont);
-
+    text-align: center;
 }
