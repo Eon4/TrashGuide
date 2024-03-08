@@ -1,5 +1,4 @@
 
-// RecyclingPageDetails
 import { useEffect, useState } from 'react';
 import style from './RecyclingPageDetails.module.scss';
 import { useParams } from 'react-router-dom';
@@ -39,12 +38,8 @@ export const RecyclingPageDetails = () => {
 
   return (
     <div className={style.pageContainer}>
-      <h3>Recycling review page here</h3>
-
       <GiveStars
-      
       />
-
       <h4>Skriv en kommentar</h4>
       <textarea name="" id="" cols="30" rows="10">
       </textarea>
